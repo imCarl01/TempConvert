@@ -1,32 +1,48 @@
-body {
-    background-color: rgb(243, 244, 246);
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: #404040;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: rgb(243, 244, 246);
+
 }
 
 form {
-    max-width: 350px;
-    background-color: #f8f8f8;
+    width: min(90%, 400px);
+    margin: 2em auto;
     text-align: center;
-    padding: 20px;
-    margin: 10px auto;
-    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: .5em;
+    padding: 2em;
+    background-color: #fefefe;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
+}
+
+:root{
+    --primary-color: dodgerblue;
 }
 
 h1 {
-    color: blueviolet;
-    font-size: 2em;
+    color: var(--primary-color);
 }
 
 #textbox {
     text-align: center;
-    width: 80%;
-    font-size: 1.5em;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 5px;
+    width: 100%;
+    padding: .75em;
+    margin: 2em 0;
+    border: 1px solid #ddd;
+    font-size: 1.2em;
+    border-radius: .5em;
+}
+#textbox:focus-within{
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+    border-color: #aaa;
 }
 
 label {
@@ -40,71 +56,16 @@ button {
     border: none;
     cursor: pointer;
     color: white;
-    padding: 10px 20px;
+    padding: .5em 2em;
     border-radius: 5px;
     margin-top: 10px;
 }
 
 button:hover {
-    background-color: rgb(111, 4, 4);
+    filter: brightness(80%);
 }
 
 #result {
     font-size: 1.5em;
     margin-top: 20px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    form {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    #textbox {
-        font-size: 1.2em;
-    }
-
-    label {
-        font-size: 1em;
-    }
-
-    button {
-        font-size: 1em;
-        padding: 8px 16px;
-    }
-
-    #result {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 480px) {
-    form {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.2em;
-    }
-
-    #textbox {
-        font-size: 1em;
-    }
-
-    label {
-        font-size: 0.8em;
-    }
-
-    button {
-        font-size: 0.8em;
-        padding: 6px 12px;
-    }
-
-    #result {
-        font-size: 1em;
-    }
 }
