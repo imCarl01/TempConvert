@@ -1,0 +1,44 @@
+/* not linked to origal html file  */
+
+body{
+    background-color: rgb(243, 244, 246);
+}
+
+form{
+    /* display: inline-block; */
+    max-width: 350px;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 50px;
+    margin: auto;
+    box-shadow: 2px 5px 15px;
+
+}
+h1{
+    color: blueviolet;
+}
+#textbox{
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+label{
+    font-size: 25px;
+    font-weight: bold;
+}
+button{
+    font-size: 30px;
+    background-color: red;
+    border: none;
+    cursor: pointer; 
+    color: white;
+}
+button:hover{
+    background-color: rgb(111, 4, 4); 
+}
+#result{
+    font-size: 30px;
+}
