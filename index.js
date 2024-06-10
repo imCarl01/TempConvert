@@ -6,13 +6,14 @@ const result = document.getElementById("result");
 let temp;
 
 function convert(){
+   
     if(itFarenheit.checked){
-        temp = Number(textbox.value);
+        temp = textbox.value;
         temp = 32 + (9 / 5 * temp);
         result.textContent = temp.toFixed(1); 
     }
     else if(itCelius.checked){
-        temp = Number(textbox.value);
+        temp = textbox.value;
         temp = ( temp - 32) * 5 / 9;
         result.textContent = temp;
     }
